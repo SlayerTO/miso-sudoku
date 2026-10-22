@@ -19,8 +19,17 @@
   <div class="buttons">
     <a class="btn main" href="https://github.com/SlayerTO/miso-sudoku/releases/latest"><span lang="en">Download APK</span><span lang="de">APK herunterladen</span></a>
     <a class="btn" href="obtainium://add/https://github.com/SlayerTO/miso-sudoku"><span lang="en">Add to Obtainium</span><span lang="de">Zu Obtainium hinzufügen</span></a>
+    <a class="btn" href="https://sgtchaos.itch.io/miso-sudoku"><span lang="en">Get it on itch.io</span><span lang="de">Auf itch.io holen</span></a>
   </div>
 </header>
+
+<section class="trailer">
+  <button class="play" data-vimeo="1238557371" aria-label="Play trailer">
+    <img src="img/trailer.webp" width="1280" height="720" alt="Miso Sudoku trailer">
+    <span class="tri" aria-hidden="true"></span>
+  </button>
+  <p class="note"><span lang="en">The trailer plays from Vimeo once you click it; nothing loads before that.</span><span lang="de">Der Trailer kommt erst beim Klick von Vimeo; vorher wird nichts geladen.</span></p>
+</section>
 
 <section class="shots" aria-label="Screenshots">
   <img src="img/home.webp" width="450" height="1000" alt="Home screen: Miso in the attic">
@@ -67,5 +76,18 @@
 </footer>
 
 <script src="lang.js"></script>
+<script>
+// Click-to-load: the Vimeo player (do-not-track mode) only loads after the visitor asks for it.
+document.querySelectorAll('[data-vimeo]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var f = document.createElement('iframe');
+    f.src = 'https://player.vimeo.com/video/' + b.dataset.vimeo + '?autoplay=1&dnt=1';
+    f.allow = 'autoplay; fullscreen; picture-in-picture';
+    f.allowFullscreen = true;
+    f.title = 'Miso Sudoku trailer';
+    b.replaceWith(f);
+  });
+});
+</script>
 </body>
 </html>
