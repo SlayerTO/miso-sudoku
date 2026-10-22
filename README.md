@@ -2,6 +2,8 @@
 
 A calm Sudoku game with Miso the cat. No ads, no accounts, no tracking.
 
+**Website:** https://slayerto.github.io/miso-sudoku/
+
 <img src="screenshot.png" width="300" alt="Miso Sudoku home screen">
 
 - Star path: hundreds of puzzles from gentle to expert, each one lights up a star of a constellation
@@ -19,7 +21,7 @@ The game also shows a small note on its home screen when a new version is out.
 
 ## Privacy
 
-The app collects nothing. Once a day it asks GitHub whether a newer version exists; GitHub sees your IP address like any website. Your progress stays on your phone (Settings → copy save, to move it to another phone).
+Full [privacy policy](https://slayerto.github.io/miso-sudoku/privacy.html). The app collects nothing. Once a day it asks GitHub whether a newer version exists; GitHub sees your IP address like any website. Your progress stays on your phone (Settings → copy save, to move it to another phone).
 
 ---
 
